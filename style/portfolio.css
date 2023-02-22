@@ -1,20 +1,32 @@
-h1 {
-  color: grey;
-  margin: 50px;
-  font-family: "Major Mono Display", monospace;
+:root {
+  --title-font: "Major Mono Display", monospace;
+  --content-font: "Mynerve", cursive;
 }
 
-/*font-family: 'Major Mono Display', monospace;
-font-family: 'Mynerve', cursive;
-font-family: 'Quicksand', sans-serif;*/
+
+
+h1 {
+  color: grey;
+  font-size: 76px;
+  margin: 50px;
+  font-family: var(--title-font);
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color:#212121;
+  font-family: var(--content-font);
+  margin: 30px;
+}
 
 h3 {
   color: dimgrey;
-
+  text-align: center;
   margin: 30px;
-  font-family: "Mynerve", cursive;
-  display: inline;
+  font-family: var(--content-font);
 }
-.fab.fa-instagram {
-  display: inline;
+.main-image {
+  display: block;
+  margin: 0 auto;
 }
