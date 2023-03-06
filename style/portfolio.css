@@ -36,6 +36,9 @@ a.navbar-brand:hover {
 .navbar-nav li a {
   color: white;
 }
+.navbar-nav .active {
+  color: grey !important;
+}
 
 nav a:hover {
   cursor: default;
