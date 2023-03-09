@@ -1,6 +1,7 @@
 :root {
   --title-font: "Major Mono Display", monospace;
   --content-font: "Mynerve", cursive;
+  --additional-font: "Quicksand", sans-serif;
   --dark-color: #212121;
 }
 
@@ -9,14 +10,15 @@ body {
   margin-bottom: 30px;
 }
 
-h1 {
+.homepage h1,
+.mixes h1 {
   color: grey;
   font-size: 76px;
   margin: 50px;
   font-family: var(--title-font);
 }
 
-h2 {
+.homepage h2 {
   color: var(--dark-color);
   font-family: var(--content-font);
   margin: 24px;
@@ -34,6 +36,36 @@ footer a {
 footer a:hover {
   color: grey;
   text-decoration: underline;
+}
+
+.events a {
+  color: black;
+  font-family: var(--additional-font);
+  font-weight: 400;
+}
+.events a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+.events h1 {
+  color: grey;
+  font-size: 76px;
+  margin: 30px;
+  font-family: var(--title-font);
+}
+
+.events h2 {
+  color: var(--dark-color);
+  font-family: var(--content-font);
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+
+.date {
+  font-family: var(--title-font);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .navbar,
@@ -88,19 +120,29 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-  h1 {
+  .homepage h1,
+  .mixes h1,
+  .events h1 {
     font-size: 49px;
   }
   .button-container a {
     width: 250px;
     font-size: 22px;
   }
+  .events h2 {
+    font-size: 23px;
+  }
 }
 @media (max-width: 576px) {
-  h1 {
+  .homepage h1,
+  .mixes h1,
+  .events h1 {
     font-size: 35px;
   }
   footer {
     font-size: 15px;
+  }
+.events h2 {
+    font-size: 19px;
   }
 }
