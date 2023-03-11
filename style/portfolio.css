@@ -145,6 +145,10 @@ nav a:hover {
   p {
     font-size: 20px;
   }
+
+  .elevator-image {
+    width: 100% !important;
+  }
 }
 @media (max-width: 576px) {
   .homepage h1,
