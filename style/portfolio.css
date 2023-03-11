@@ -11,18 +11,25 @@ body {
 }
 
 .homepage h1,
-.mixes h1 {
+.mixes h1,
+.about h1 {
   color: grey;
   font-size: 76px;
   margin: 50px;
   font-family: var(--title-font);
 }
 
-.homepage h2 {
+.homepage h2,
+.about h2 {
   color: var(--dark-color);
   font-family: var(--content-font);
   margin: 24px;
   line-height: 1.5;
+}
+p {
+  font-family: var(--content-font);
+  line-height: 30px;
+  font-size: 28px;
 }
 
 footer {
@@ -123,27 +130,46 @@ nav a:hover {
 @media (max-width: 768px) {
   .homepage h1,
   .mixes h1,
-  .events h1 {
+  .events h1,
+  .about h1 {
     font-size: 49px;
   }
   .button-container a {
     width: 250px;
     font-size: 22px;
   }
-  .events h2 {
+  .events h2,
+  .about h2 {
     font-size: 23px;
+  }
+  p {
+    font-size: 20px;
   }
 }
 @media (max-width: 576px) {
   .homepage h1,
   .mixes h1,
-  .events h1 {
+  .events h1,
+  .about h1 {
     font-size: 35px;
   }
   footer {
     font-size: 15px;
   }
-  .events h2 {
+  .events h2,
+  .about h2 {
     font-size: 19px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  p {
+    font-size: 20px;
+  }
+  .card {
+    width: 95% !important;
   }
 }
