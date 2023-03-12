@@ -3,6 +3,7 @@
   --content-font: "Mynerve", cursive;
   --additional-font: "Quicksand", sans-serif;
   --dark-color: #212121;
+  --additional-color: #4d4d4d;
 }
 
 body {
@@ -30,6 +31,27 @@ p {
   font-family: var(--content-font);
   line-height: 30px;
   font-size: 28px;
+  background-color: grey;
+  color: rgba(var(--dark-color), 0.7);
+}
+
+.container.about {
+  background-color: var(--additional-color);
+}
+.about h1 {
+  color: white;
+}
+.card {
+  background-color: grey;
+}
+.card-element {
+  border-color: var(--additional-color) !important;
+}
+.card {
+  border-color: rgba(var(--dark-color), 0.7) !important;
+}
+.elevator-image {
+  border-color: #1759CD !important;
 }
 
 footer {
