@@ -195,10 +195,9 @@ nav a:hover {
     padding: 25px;
     margin: 0;
   }
+
+  .top-image,
   .elevator-image {
-    border: hidden !important;
-  }
-  .top-image {
     border-color: var(--additional-color) !important;
   }
 }
