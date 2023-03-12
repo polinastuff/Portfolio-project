@@ -51,7 +51,7 @@ p {
   border-color: rgba(var(--dark-color), 0.7) !important;
 }
 .elevator-image {
-  border-color: #1759CD !important;
+  border-color: #1759cd !important;
 }
 
 footer {
@@ -182,12 +182,19 @@ nav a:hover {
   footer {
     font-size: 15px;
   }
-  .events h2,
-  .about h2 {
+  .events h2 {
     font-size: 19px;
+  }
+  .about h2 {
+    font-size: 21px;
   }
   p {
     font-size: 16px;
+  }
+  .about h1 {
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin: 0;
   }
 }
 
@@ -197,5 +204,8 @@ nav a:hover {
   }
   .card {
     width: 95% !important;
+  }
+  .elevator-image {
+    border-color: var(--additional-color) !important;
   }
 }
