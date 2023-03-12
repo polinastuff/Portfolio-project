@@ -195,7 +195,10 @@ nav a:hover {
     padding: 30px;
     margin: 0;
   }
+    
+
 }
+
 
 @media (max-width: 992px) {
   p {
@@ -204,8 +207,8 @@ nav a:hover {
   .card {
     width: 95% !important;
   }
-  .elevator-image,
-  .top-image {
+  .elevator-image
+   {
     border-color: var(--additional-color) !important;
   }
 }
