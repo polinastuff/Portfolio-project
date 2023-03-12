@@ -171,6 +171,9 @@ nav a:hover {
   .elevator-image {
     width: 100% !important;
   }
+  .top-image {
+    border-color: var(--additional-color) !important;
+  }
 }
 @media (max-width: 576px) {
   .homepage h1,
@@ -195,10 +198,8 @@ nav a:hover {
     padding: 25px;
     margin: 0;
   }
-
-  .top-image,
-  .elevator-image {
-    border-color: var(--additional-color) !important;
+  .about {
+    border-radius: 0 0 6px 6px !important;
   }
 }
 
