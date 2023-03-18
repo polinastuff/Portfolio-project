@@ -18,7 +18,8 @@ footer a:hover {
   color: grey;
 }
 
-.navbar-nav li a {
+.navbar-nav li a,
+.contact a:hover {
   color: white;
 }
 .navbar-nav .active {
@@ -34,13 +35,13 @@ footer a:hover,
   text-decoration: underline;
 }
 
-.contact a:hover {
-  color: var(--additional-color);
-}
-
 body {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.about-page body {
+  background-color: var(--dark-color);
 }
 
 .homepage h1,
@@ -55,6 +56,11 @@ body {
   margin: 30px;
 }
 
+.about-page h1 {
+  color: white;
+  background-color: var(--additional-color);
+}
+
 .homepage h2,
 .events h2 {
   color: var(--dark-color);
@@ -66,11 +72,41 @@ body {
   margin-bottom: 0px;
 }
 
+.about-page h2 {
+  font-family: var(--content-font);
+  color: grey;
+}
+
+h3 {
+  font-family: var(--title-font);
+  color: grey;
+  font-size: 30px;
+}
+
 .events a,
 .no-link {
   color: black;
   font-family: var(--additional-font);
   font-weight: 400;
+}
+
+p,
+p a {
+  font-family: var(--content-font);
+  font-size: 23px;
+  color: var(--dark-color);
+}
+
+.contact {
+  color: rgba(var(--dark-color), 0.7);
+  font-family: var(--content-font);
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+.contact a {
+  text-decoration: none;
+  color: rgba(var(--dark-color), 0.7);
 }
 
 .button-container {
@@ -111,56 +147,11 @@ body {
   margin: 0 auto;
 }
 
-p {
-  font-family: var(--content-font);
-  line-height: 30px;
-  font-size: 28px;
-  background-color: grey;
-  color: whitesmoke;
-}
-
-.container.about {
-  background-color: var(--additional-color);
-}
-.about h1 {
-  color: white;
-}
-.card {
-  background-color: grey;
-}
-.card-element {
-  border-color: var(--additional-color) !important;
-}
-.card {
+.about-image {
   border-color: rgba(var(--dark-color), 0.7) !important;
 }
-
-
-.contact {
-  color: rgba(var(--dark-color), 0.7);
-  font-family: var(--content-font);
-  font-size: 25px;
-  text-align: center;
-  font-weight: 600;
-}
-.contact a {
-  text-decoration: none;
-  color: rgba(var(--dark-color), 0.7);
-}
-
-#contact-card {
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-size: 67px;
-}
-
-.about h2,
-p {
-  text-shadow: 1px 1px 2px var(--dark-color);
-}
-
-.about h1 {
-  text-shadow: 1px 1px 2px grey;
+.container.about {
+  background-color: var(--additional-color);
 }
 
 footer {
@@ -172,6 +163,10 @@ footer a {
   text-decoration: none;
 }
 
+footer.about-footer a {
+  color: white;
+}
+
 @media (max-width: 576px) {
   .homepage h1,
   .mixes h1,
@@ -179,20 +174,15 @@ footer a {
   .about h1 {
     font-size: 35px;
   }
-  #contact-card {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 35px;
-  }
 
   footer {
     font-size: 15px;
   }
-  .events h2 {
+  .events h2,
+  .contact {
     font-size: 19px;
   }
-  .about h2,
-  .contact {
+  .about h2 {
     font-size: 21px;
   }
 
@@ -200,8 +190,9 @@ footer a {
     padding: 25px;
     margin: 0;
   }
-  .about {
-    border-radius: 0 0 6px 6px !important;
+
+  h3 {
+    font-size: 26px;
   }
 }
 
@@ -209,8 +200,7 @@ footer a {
   .homepage h1,
   .mixes h1,
   .events h1,
-  .about h1,
-  #contact-card {
+  .about h1 {
     font-size: 49px;
   }
   .button-container a {
@@ -218,27 +208,20 @@ footer a {
     font-size: 22px;
   }
   .events h2,
-  .about h2,
-  .contact {
+  .about h2 {
     font-size: 23px;
   }
-
-  .elevator-image {
-    width: 100% !important;
+  h3 {
+    font-size: 24px;
   }
-  .top-image {
-    border-color: var(--additional-color) !important;
+
+  .contact {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 992px) {
   p {
     font-size: 20px;
-  }
-  .card {
-    width: 95% !important;
-  }
-  .elevator-image {
-    border-color: var(--additional-color) !important;
   }
 }
