@@ -40,18 +40,25 @@ body {
   margin-bottom: 30px;
 }
 
-.about-page body {
+body.about-page {
   background-color: var(--dark-color);
+}
+
+.homepage h1,
+.mixes h1,
+.events h1,
+.about-page h1 {
+  font-size: 76px;
+  margin: 50px;
+  font-family: var(--title-font);
 }
 
 .homepage h1,
 .mixes h1,
 .events h1 {
   color: grey;
-  font-size: 76px;
-  margin: 50px;
-  font-family: var(--title-font);
 }
+
 .events h1 {
   margin: 30px;
 }
@@ -171,7 +178,7 @@ footer.about-footer a {
   .homepage h1,
   .mixes h1,
   .events h1,
-  .about h1 {
+  .about-page h1 {
     font-size: 35px;
   }
 
@@ -182,11 +189,11 @@ footer.about-footer a {
   .contact {
     font-size: 19px;
   }
-  .about h2 {
+  .about-page h2 {
     font-size: 21px;
   }
 
-  .about h1 {
+  .about-page h1 {
     padding: 25px;
     margin: 0;
   }
@@ -200,7 +207,7 @@ footer.about-footer a {
   .homepage h1,
   .mixes h1,
   .events h1,
-  .about h1 {
+  .about-page h1 {
     font-size: 49px;
   }
   .button-container a {
@@ -208,7 +215,7 @@ footer.about-footer a {
     font-size: 22px;
   }
   .events h2,
-  .about h2 {
+  .about-page h2 {
     font-size: 23px;
   }
   h3 {
