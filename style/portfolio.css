@@ -11,6 +11,7 @@
 .events h1,
 .about-page h1,
 .button-container a,
+footer .code-link,
 .date,
 h3 {
   font-family: var(--title-font);
@@ -38,6 +39,7 @@ footer.about-footer a,
 a.navbar-brand:hover,
 .events a:hover,
 footer a:hover,
+footer .code-link,
 .homepage h1,
 .mixes h1,
 .events h1,
@@ -101,7 +103,8 @@ footer a,
 }
 
 footer a:hover,
-.contact a:hover {
+.contact a:hover,
+footer .code-link a {
   text-decoration: underline;
 }
 
@@ -181,6 +184,10 @@ p a {
 
 .about-image {
   border-color: rgba(var(--dark-color), 0.7) !important;
+}
+
+footer .code-link {
+  font-size: 11px;
 }
 
 footer {
