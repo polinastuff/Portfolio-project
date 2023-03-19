@@ -6,33 +6,78 @@
   --additional-color: #4d4d4d;
 }
 
-.navbar,
-.navbar-brand {
-  font-family: var(--content-font);
-  font-size: 24px;
-  line-height: 36px;
+.homepage h1,
+.mixes h1,
+.events h1,
+.about-page h1,
+.button-container a,
+.date,
+h3 {
+  font-family: var(--title-font);
 }
-a.navbar-brand:hover,
-.events a:hover,
-footer a:hover {
-  color: grey;
+
+.navbar,
+.navbar-brand,
+.contact,
+.homepage h2,
+.events h2,
+.about-page h2,
+p,
+p a,
+footer {
+  font-family: var(--content-font);
 }
 
 .navbar-nav li a,
-.contact a:hover {
+.contact a:hover,
+footer.about-footer a,
+.about-page h1 {
   color: white;
 }
+
+a.navbar-brand:hover,
+.events a:hover,
+footer a:hover,
+.homepage h1,
+.mixes h1,
+.events h1,
+.about-page h2,
+.button-container a,
+h3 {
+  color: grey;
+}
+
 .navbar-nav .active {
   color: grey !important;
 }
 
-nav a:hover {
-  cursor: default;
+.homepage h2,
+.events h2,
+p,
+p a,
+.contact-button:hover,
+footer a {
+  color: var(--dark-color);
 }
 
-footer a:hover,
-.contact a:hover {
-  text-decoration: underline;
+.contact,
+.contact a {
+  color: rgba(var(--dark-color), 0.7);
+}
+
+.contact-button:hover {
+  background-color: grey;
+  border: 1px solid var(--dark-color);
+}
+
+body.about-page,
+.button-container a {
+  background-color: var(--dark-color);
+}
+
+.container.about,
+.about-page h1 {
+  background-color: var(--additional-color);
 }
 
 body {
@@ -40,8 +85,39 @@ body {
   margin-bottom: 30px;
 }
 
-body.about-page {
-  background-color: var(--dark-color);
+nav a:hover {
+  cursor: default;
+}
+
+.date,
+.contact,
+.button-container a {
+  text-align: center;
+}
+
+footer a,
+.contact a {
+  text-decoration: none;
+}
+
+footer a:hover,
+.contact a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p,
+p a {
+  font-size: 23px;
+}
+
+.navbar,
+.navbar-brand {
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .homepage h1,
@@ -50,28 +126,14 @@ body.about-page {
 .about-page h1 {
   font-size: 76px;
   margin: 50px;
-  font-family: var(--title-font);
-}
-
-.homepage h1,
-.mixes h1,
-.events h1 {
-  color: grey;
 }
 
 .events h1 {
   margin: 30px;
 }
 
-.about-page h1 {
-  color: white;
-  background-color: var(--additional-color);
-}
-
 .homepage h2,
 .events h2 {
-  color: var(--dark-color);
-  font-family: var(--content-font);
   margin: 24px;
   line-height: 1.5;
 }
@@ -79,41 +141,9 @@ body.about-page {
   margin-bottom: 0px;
 }
 
-.about-page h2 {
-  font-family: var(--content-font);
-  color: grey;
-}
-
-h3 {
-  font-family: var(--title-font);
-  color: grey;
-  font-size: 30px;
-}
-
-.events a,
-.no-link {
-  color: black;
-  font-family: var(--additional-font);
-  font-weight: 400;
-}
-
-p,
-p a {
-  font-family: var(--content-font);
-  font-size: 23px;
-  color: var(--dark-color);
-}
-
 .contact {
-  color: rgba(var(--dark-color), 0.7);
-  font-family: var(--content-font);
   font-size: 25px;
-  text-align: center;
   font-weight: 600;
-}
-.contact a {
-  text-decoration: none;
-  color: rgba(var(--dark-color), 0.7);
 }
 
 .button-container {
@@ -128,25 +158,20 @@ p a {
   margin-right: auto;
   left: 0;
   right: 0;
-  text-align: center;
-  color: grey;
-  background-color: var(--dark-color);
-  font-family: var(--title-font);
   font-size: 23px;
   width: 300px;
 }
 
-.contact-button:hover {
-  background-color: grey;
-  color: var(--dark-color);
-  border: 1px solid var(--dark-color);
+.events a,
+.no-link {
+  color: black;
+  font-family: var(--additional-font);
+  font-weight: 400;
 }
 
 .date {
-  font-family: var(--title-font);
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
 }
 
 .main-image {
@@ -157,21 +182,9 @@ p a {
 .about-image {
   border-color: rgba(var(--dark-color), 0.7) !important;
 }
-.container.about {
-  background-color: var(--additional-color);
-}
 
 footer {
-  font-family: var(--content-font);
   font-size: 20px;
-}
-footer a {
-  color: var(--dark-color);
-  text-decoration: none;
-}
-
-footer.about-footer a {
-  color: white;
 }
 
 @media (max-width: 1199px) {
